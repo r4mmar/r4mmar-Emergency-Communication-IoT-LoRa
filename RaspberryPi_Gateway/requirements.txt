@@ -1,0 +1,5 @@
+pyserial
+paho-mqtt
+RPi.GPIO
+luma.oled
+luma.core
