@@ -1,0 +1,15 @@
+[Unit]
+Description=Emergency Communication Gateway
+After=network.target
+
+[Service]
+Type=simple
+User=raspia
+Group=raspia
+WorkingDirectory=/home/raspia/PA/RaspberryPi_Gateway
+ExecStart=/usr/bin/python3 /home/raspia/PA/RaspberryPi_Gateway/gateway.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
